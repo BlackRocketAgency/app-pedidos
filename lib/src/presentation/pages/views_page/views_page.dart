@@ -18,6 +18,7 @@ class ViewsPage extends StatelessWidget {
           return SafeArea(
             child: Scaffold(
               // backgroundColor: Colors.black,
+              extendBody: true,
               body: controller.selectedView(view: controller.selectedMenu),
               bottomNavigationBar: MyBottomBar(
                 position: controller.selectedMenu,
